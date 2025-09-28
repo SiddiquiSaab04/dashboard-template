@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,8 +8,9 @@ export default {
   theme: {
     extend: {
       colors:{
-      navbarLightBg:'#E1EEFD',
-      sidebarLightBg:'#7F697D',
+      lightBg:'#FFFEEC',
+      primary:'#CBD83B',
+      secondary:'#A88AED',
     }
     },
   },

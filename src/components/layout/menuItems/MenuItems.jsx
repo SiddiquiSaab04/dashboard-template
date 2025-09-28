@@ -1,19 +1,25 @@
+import { HomeIcon, Settings, UserCircle, Users } from 'lucide-react'
 import React from 'react'
-import { HomeIcon } from '@heroicons/react/24/solid'
+import { CiDatabase, CiHome, CiSettings, CiUser } from 'react-icons/ci'
 export const MenuItems =  [
         {
             name: 'Home',
-            icon: 'HomeIcon',
+            icon: <HomeIcon size={20}/>,
             path: '/'
         },
         {
-            name: 'About',
-            icon: 'AboutIcon',
+            name: 'Account',
+            icon: <UserCircle size={20}/>,
+            path: '/account'
+        },
+        {
+            name: 'Settings',
+            icon: <Settings size={20}/>,
             path: '/about'
         },
         {
-            name: 'Contact',
-            icon: 'ContactIcon',
-            path: '/contact'
+            name: 'Users',
+            icon: <Users size={20}/>,
+            path: '/users'
         }
     ]

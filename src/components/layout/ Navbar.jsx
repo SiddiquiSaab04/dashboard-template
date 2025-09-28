@@ -13,8 +13,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center navbar w-full h-8 p-2 bg-navbarLightBg relative">
-        hello from laiba
+      <div className="navbar flex justify-between items-center w-full h-8 p-2 bg-lightBg relative ">
+        Navbar
         <div className="relative">
           <button 
             onClick={toggleDropdown}
@@ -48,13 +48,6 @@ export const Navbar = () => {
                 >
                   Settings
                 </a>
-                <a 
-                  href="#" 
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-150"
-                  onClick={closeDropdown}
-                >
-                  Help
-                </a>
                 <hr className="my-1" />
                 <a 
                   href="#" 
@@ -68,7 +61,9 @@ export const Navbar = () => {
           )}
         </div>
       </div>
-            {isDropdownOpen && (
+      
+      {/* Backdrop to close dropdown when clicking outside */}
+      {isDropdownOpen && (
         <div 
           className="fixed inset-0 z-40" 
           onClick={closeDropdown}
